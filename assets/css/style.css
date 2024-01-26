@@ -895,6 +895,7 @@ trainers
 
 #trainers { 
   padding-bottom: 90px; 
+    
 }
 
 #trainers .trainer-item {
@@ -903,6 +904,7 @@ trainers
   box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
   padding: 15px;
   margin-bottom: 30px;
+   
 }
 
 #trainers .trainer-item img {
