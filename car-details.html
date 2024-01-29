@@ -1,23 +1,3 @@
-<?php
-$servername = "localhost";
-$username = "psb212291";
-$password = "psb212291";
-$dbname = "psb212291_standautopap";
-
-// Criar conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Verificar conexão
-if ($conn->connect_error) {
-  die("Erro de conexão: " . $conn->connect_error);
-}
-
-// Query SQL para selecionar todos os dados da tabela carros
-$sql = "SELECT * FROM carros";
-$result = $conn->query($sql);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -116,6 +96,23 @@ $result = $conn->query($sql);
       <br>
 
       <?php
+      $servername = "localhost";
+      $username = "seu_nome_de_usuário";
+      $password = "sua_senha";
+      $dbname = "psb212291_standautopap";
+
+      // Criar conexão
+      $conn = new mysqli($servername, $username, $password, $dbname);
+
+      // Verificar conexão
+      if ($conn->connect_error) {
+        die("Erro de conexão: " . $conn->connect_error);
+      }
+
+      // Query SQL para selecionar todos os dados da tabela carros
+      $sql = "SELECT * FROM carros";
+      $result = $conn->query($sql);
+
       if ($result->num_rows > 0) {
         // Saída de dados de cada linha
         while ($row = $result->fetch_assoc()) {
